@@ -1,0 +1,7 @@
+<h1 class="title_home">Nossos Gatos</h1>
+
+<div class="grid grid-cols-2">
+   <div *ngFor="let cat of catList; let i = index">
+      <img (click)="redirectCat(i)" class="img_home mx-4 my-4" src="{{cat.image}}" alt="">
+   </div>
+</div>

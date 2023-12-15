@@ -1,0 +1,55 @@
+<div class="container_card">
+   <button mat-icon-button (click)="voltar()">
+      <mat-icon class="">arrow_back</mat-icon>
+   </button>
+
+   <div class="grid justify-center mt-24 text-center align-middle" *ngFor="let cat of catList">
+      <div class="flex justify-center">
+         <img class="img_card mb-4 mx-6" src="{{cat.image}}" alt="">
+      </div>
+      <h2 class="name_card">{{cat.nome}}</h2>
+
+      <div class="grid grid-cols-2 mt-8">
+         <a class="indicador_card flex ml-2">Raça:
+            <p class="conteudo_card mx-2">{{cat.raca}}</p>
+         </a>
+         <a class="indicador_card flex">Sexo:
+            <p class="conteudo_card mx-2">{{cat.sexo}}</p>
+         </a>
+      </div>
+
+      <div class="grid grid-cols-2 mt-8">
+         <a class="indicador_card flex ml-2">Espécie:
+            <p class="conteudo_card mx-2">{{cat.especie}}</p>
+         </a>
+         <a class="indicador_card flex ">Idade:
+            <p class="conteudo_card mx-2">{{cat.dataNascimento}}</p>
+         </a>
+      </div>
+
+      <div class="grid grid-cols-2 mt-8">
+         <a class="indicador_card flex ml-2">Pai:
+            <p class="conteudo_card mx-2">{{cat.pai}}</p>
+         </a>
+         <a class="indicador_card flex ">Mãe:
+            <p class="conteudo_card mx-2">{{cat.mae}}</p>
+         </a>
+      </div>
+
+      <div class="grid grid-cols-2 mt-8 ">
+         <a class="indicador_card flex ml-2">Cidade:
+            <p class="conteudo_card mx-2">{{cat.cidade}}</p>
+         </a>
+         <a class="indicador_card flex ">Telefone:
+            <p class="conteudo_card ">{{cat.telefone}}</p>
+         </a>
+      </div>
+
+      <div class="grid grid-cols-1 mt-8 ">
+         <a class="indicador_card flex ml-2">Endereço:
+            <p class="conteudo_card mx-2">{{cat.endereco}}</p>
+         </a>
+      </div>
+
+   </div>
+</div>

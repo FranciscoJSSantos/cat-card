@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.img_card{
+   border-radius: 50%;
+   width: 250px;
+   height: 250px;
+   max-width: 250px;
+   max-height: 250px;
+   object-fit: cover;
+}
+
+.name_card {
+   font-size: 3.5em;
+   font-weight: 700;
+   font-family: "Dancing Script", sans-serif;
+}
+
+.indicador_card{
+   font-weight: 700;
+   color: #000000
+}
+
+.conteudo_card {
+   font-weight: 400;
+   color: #010101
+}
+
+.container_card {
+  background-color: #fefefe;
+height: 100vh;
+}
+
+//luffy   background-image: linear-gradient(to top, #f1ecec, #bfbbbb, #8f8c8d, #636061, #393738);
