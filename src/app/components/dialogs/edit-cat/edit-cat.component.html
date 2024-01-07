@@ -1,0 +1,94 @@
+<form [formGroup]="editCatForm" (ngSubmit)="onSubmit()" class="ml-8 mt-4 w-4/5 border-b border-gray-900/10 pb-12">
+   <h2 class="center text-center text-base font-semibold leading-7 text-gray-900">Edição do {{catList.name}}</h2>
+   <!-- <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p> -->
+
+   <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+      <div class="sm:col-span-3">
+         <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Nome</label>
+         <div class="mt-2">
+            <input type="text" id="name" formControlName="name" autocomplete="given-name"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+      <div class="sm:col-span-3">
+         <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Raça</label>
+         <div class="mt-2">
+            <input type="text" id="raca" formControlName="raca" autocomplete="family-name"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+      <div class="sm:col-span-3">
+         <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Data Nascimento</label>
+         <div class="mt-2">
+            <input type="text" id="dataNascimento" formControlName="dataNascimento" autocomplete="family-name"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+      <div class="sm:col-span-4">
+         <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Sexo</label>
+         <div class="mt-2">
+            <input id="email" id="sexo" formControlName="sexo"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+      <div class="col-span-full">
+         <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Espécie</label>
+         <div class="mt-2">
+            <input type="text" id="especie" formControlName="especie" autocomplete="street-address"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+
+
+      <div class="sm:col-span-2">
+         <label for="region" class="block text-sm font-medium leading-6 text-gray-900">Pai</label>
+         <div class="mt-2">
+            <input type="text" id="pai" formControlName="pai" autocomplete="address-level1"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+      <div class="sm:col-span-2">
+         <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Mãe</label>
+         <div class="mt-2">
+            <input type="text" id="mae" formControlName="mae" autocomplete="postal-code"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+      <div class="sm:col-span-2">
+         <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Cidade</label>
+         <div class="mt-2">
+            <input type="text" id="cidade" formControlName="cidade" autocomplete="postal-code"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+
+      <div class="sm:col-span-2">
+         <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Endereço</label>
+         <div class="mt-2">
+            <input type="text" id="endereco" formControlName="endereco" autocomplete="postal-code"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+      <div class="sm:col-span-2">
+         <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Telefone</label>
+         <div class="mt-2">
+            <input type="text" id="telefone" formControlName="telefone" autocomplete="postal-code"
+               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:to-blue-500 sm:text-sm sm:leading-6">
+         </div>
+      </div>
+   </div>
+
+   <div class="mt-8 -mb-4 flex center justify-center text-center">
+      <button type="submit"
+         class="flex items-center justify-evenly text-center w-1/2 text-white bg-blue-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">
+         <a>Salvar</a>
+      </button>
+   </div>
+</form>

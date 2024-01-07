@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
-import catData from '../../../assets/mock/cats.json';
+import { RouterOutlet } from '@angular/router';
 import { Cat } from '../../interfaces/cat';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, HttpClientModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -15,17 +16,16 @@ export class HomeComponent implements OnInit {
   id: any;
   catList: Cat[] = [];
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(public homeService: HomeService) {}
   ngOnInit() {
-    this.catList = catData;
-    console.log(this.catList);
+    this.homeService.getAllCats().subscribe({
+      next: (res) => (this.catList = res),
+      error: (err) => console.log(err),
+      complete: () => console.log('complete call to getAllCats'),
+    });
   }
 
-  redirectCat(id: number) {
-    console.log(id);
-
-    console.log(window.location.pathname);
-
+  redirectCat(id?: number) {
     window.location.pathname = `/card/${id}`;
   }
 }

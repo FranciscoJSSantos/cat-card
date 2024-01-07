@@ -1,55 +1,98 @@
 <div class="container_card">
-   <button mat-icon-button (click)="voltar()">
-      <mat-icon class="">arrow_back</mat-icon>
-   </button>
+   <div>
+      <button mat-icon-button (click)="voltar()">
+         <mat-icon class="text-white">arrow_back</mat-icon>
+      </button>
+      <div *ngFor="let cat of catList" class="bg-white p-3 shadow-sm rounded-sm">
 
-   <div class="grid justify-center mt-24 text-center align-middle" *ngFor="let cat of catList">
-      <div class="flex justify-center">
-         <img class="img_card mb-4 mx-6" src="{{cat.image}}" alt="">
+         <div class="flex justify-center">
+            <img class="img_card mb-4 mx-6" src={{cat?.image}} alt="">
+            <h2>{{cat?.name}}</h2>
+            <div class="div_button_edit">
+               <mat-icon (click)="editCat()">edit</mat-icon>
+            </div>
+         </div>
+         <div class="mt-8 text-gray-700 ">
+            <div class="grid md:grid-cols-2 text-sm">
+               <div class="grid grid-cols-2">
+                  <div class="text-base px-4 py-2 font-semibold">Raça</div>
+                  <div class="px-4 py-2">{{cat?.raca}}</div>
+               </div>
+               <div class="grid grid-cols-2 ">
+                  <div class="text-base px-4 py-2 font-semibold">Sexo</div>
+                  <div class="px-4 py-2"><mat-icon [ngClass]="cat?.sexo === 'Macho' ? 'male' : 'female'"
+                        class="absolute">{{catSex(cat?.sexo)}}</mat-icon></div>
+               </div>
+               <div class="grid grid-cols-2 ">
+                  <div class="text-base px-4 py-2 font-semibold">Espécie</div>
+                  <div class="px-4 py-2">{{cat?.especie}}</div>
+               </div>
+               <div class="grid grid-cols-2 ">
+                  <div class="text-base px-4 py-2 font-semibold">Idade</div>
+                  <div class="px-4 py-2">{{cat?.dataNascimento}}</div>
+               </div>
+               <div class="grid grid-cols-2 ">
+                  <div class="text-base px-4 py-2 font-semibold">Pais</div>
+                  <div class="px-4 py-2">{{cat?.pai + ' e ' + cat?.mae}}</div>
+               </div>
+               <div class="grid grid-cols-2 ">
+                  <div class="text-base px-4 py-2 font-semibold">Cidade</div>
+                  <div class="px-4 py-2">{{cat?.cidade}}</div>
+               </div>
+               <div class="grid grid-cols-2 ">
+                  <div class="text-base px-4 py-2 font-semibold">Endereço</div>
+                  <div class="px-4 py-2">{{cat?.endereco}}</div>
+               </div>
+               <div class="grid grid-cols-2 ">
+                  <div class="text-base px-4 py-2 font-semibold">Telefone</div>
+                  <div class="px-4 py-2">{{cat?.telefone}}</div>
+               </div>
+            </div>
+         </div>
       </div>
-      <h2 class="name_card">{{cat.nome}}</h2>
 
-      <div class="grid grid-cols-2 mt-8">
-         <a class="indicador_card flex ml-2">Raça:
-            <p class="conteudo_card mx-2">{{cat.raca}}</p>
-         </a>
-         <a class="indicador_card flex">Sexo:
-            <p class="conteudo_card mx-2">{{cat.sexo}}</p>
-         </a>
+      <div class="grid mt-8">
+         <div class="flex center justify-center text-center">
+            <button (click)="openRemedioDialog()" type="button"
+               class="flex items-center justify-evenly text-center w-1/2 text-white bg_blue hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">
+               <mat-icon class="mr-3">local_hospital</mat-icon>
+               <a>Remédios</a>
+            </button>
+         </div>
+
+         <div class="flex center justify-center text-center">
+            <button (click)="openExameDialog()" type="button"
+               class="flex items-center justify-evenly w-1/2 text-white bg_yellow hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+               <mat-icon class="mr-3">medical_services</mat-icon>
+               <a>Exames</a>
+            </button>
+         </div>
+         <div class="flex center justify-center text-center">
+            <button (click)="openVacinaDialog()" type="button"
+               class="flex items-center justify-evenly w-1/2 text-white bg_green hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+               <mat-icon class="mr-3">vaccines</mat-icon>
+               <a>Vacinas</a>
+            </button>
+         </div>
       </div>
 
-      <div class="grid grid-cols-2 mt-8">
-         <a class="indicador_card flex ml-2">Espécie:
-            <p class="conteudo_card mx-2">{{cat.especie}}</p>
-         </a>
-         <a class="indicador_card flex ">Idade:
-            <p class="conteudo_card mx-2">{{cat.dataNascimento}}</p>
-         </a>
-      </div>
+      <!-- <div class="grid grid-cols-2 mt-8 ">
+      <button (click)="openRemedioDialog()" class=" bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded
+         shadow">
+         Remédios
+      </button>
 
-      <div class="grid grid-cols-2 mt-8">
-         <a class="indicador_card flex ml-2">Pai:
-            <p class="conteudo_card mx-2">{{cat.pai}}</p>
-         </a>
-         <a class="indicador_card flex ">Mãe:
-            <p class="conteudo_card mx-2">{{cat.mae}}</p>
-         </a>
-      </div>
-
-      <div class="grid grid-cols-2 mt-8 ">
-         <a class="indicador_card flex ml-2">Cidade:
-            <p class="conteudo_card mx-2">{{cat.cidade}}</p>
-         </a>
-         <a class="indicador_card flex ">Telefone:
-            <p class="conteudo_card ">{{cat.telefone}}</p>
-         </a>
-      </div>
-
-      <div class="grid grid-cols-1 mt-8 ">
-         <a class="indicador_card flex ml-2">Endereço:
-            <p class="conteudo_card mx-2">{{cat.endereco}}</p>
-         </a>
-      </div>
-
+      <button (click)="openExameDialog()" class=" bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded
+         shadow">
+         Exames
+      </button>
    </div>
+   <button (click)="openVacinaDialog()"
+      class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+      Vacinas
+   </button> -->
+   </div>
+
+
+
 </div>

@@ -18,3 +18,14 @@
    height: 150px;
    object-fit: cover;
 }
+
+@media screen and (min-width: 1024px) {
+   .img_home {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      border-radius: 15%;
+      object-fit: contain;
+      max-height: 300px;
+   }
+ }

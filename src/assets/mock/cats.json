@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "nome": "Luffy",
+    "name": "Luffy",
     "dataNascimento": "15/08/2021",
     "especie": "Felina",
     "raca": "-",
@@ -11,11 +11,40 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 9139-7587",
-    "image": "/assets/pictures/luffy.jpg"
+    "image": "/assets/pictures/luffy.jpg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "Raiva",
+        "data": "15/12/2023"
+      },
+      {
+        "id": 1,
+        "name": "Raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   },
   {
     "id": 1,
-    "nome": "Ayah",
+    "name": "Ayah",
     "dataNascimento": "27/02/2020",
     "especie": "Felina",
     "raca": "-",
@@ -25,11 +54,35 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 9139-7587",
-    "image": "/assets/pictures/ayah.jpg"
+    "image": "/assets/pictures/ayah.jpg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   },
   {
     "id": 2,
-    "nome": "Jack",
+    "name": "Jack",
     "dataNascimento": "24/12/2022",
     "especie": "Felina",
     "raca": "-",
@@ -39,11 +92,35 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 99841-4129",
-    "image": "/assets/pictures/jack.jpeg"
+    "image": "/assets/pictures/jack.jpeg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   },
   {
     "id": 3,
-    "nome": "Lilly",
+    "name": "Lilly",
     "dataNascimento": "24/12/2022",
     "especie": "Fêmea",
     "raca": "-",
@@ -53,11 +130,35 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 99841-4129",
-    "image": "/assets/pictures/lilly.jpeg"
+    "image": "/assets/pictures/lilly.jpeg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   },
   {
     "id": 4,
-    "nome": "Oliver",
+    "name": "Oliver",
     "dataNascimento": "24/12/2022",
     "especie": "Felina",
     "raca": "-",
@@ -67,11 +168,35 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 99841-4129",
-    "image": "/assets/pictures/oliver.jpg"
+    "image": "/assets/pictures/oliver.jpg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   },
   {
     "id": 5,
-    "nome": "Aurora",
+    "name": "Aurora",
     "dataNascimento": "30/09/2022",
     "especie": "Felina",
     "raca": "-",
@@ -81,11 +206,35 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 9139-7587",
-    "image": "/assets/pictures/aurora.jpg"
+    "image": "/assets/pictures/aurora.jpg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   },
   {
     "id": 6,
-    "nome": "Pietra",
+    "name": "Pietra",
     "dataNascimento": "11/11/2022",
     "especie": "Felina",
     "raca": "-",
@@ -95,11 +244,35 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 9139-7587",
-    "image": "/assets/pictures/pietra.jpeg"
+    "image": "/assets/pictures/pietra.jpeg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   },
   {
     "id": 7,
-    "nome": "Luna",
+    "name": "Luna",
     "dataNascimento": "10/11/2023",
     "especie": "Felina",
     "raca": "-",
@@ -109,6 +282,30 @@
     "endereco": "Av. Francisco Moreira 801, Bloco J302",
     "cidade": "Aracaju, SE",
     "telefone": "(79) 9139-7587",
-    "image": "/assets/pictures/luna.jpg"
+    "image": "/assets/pictures/luna.jpg",
+    "remedios": [
+      {
+        "id": 0,
+        "name": "Hemocare",
+        "horario": "12h",
+        "dataIni": "20/11/2023",
+        "dataFim": "22/12/2023"
+      }
+    ],
+    "vacinas": [
+      {
+        "id": 0,
+        "name": "raiva",
+        "data": "15/12/2023"
+      }
+    ],
+    "exames": [
+      {
+        "id": 0,
+        "name": "Sangue",
+        "data": "12/12/2023",
+        "documentos": "caminho"
+      }
+    ]
   }
 ]

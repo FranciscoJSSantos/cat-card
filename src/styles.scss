@@ -2,5 +2,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.male {
+   color: #2563eb;   
+}
+
+.female {
+   color: purple;
+}
+
+
+.blue {
+   color: #84c7e7;
+}
+
+.yellow {
+   color: #e0901d; 
+}
+
+.green {
+   color: #8ba148;
+}
+
+.bg_blue {
+   background-color: #84c7e7
+}
+
+.bg_yellow {
+   background-color: #e0901d
+}
+.bg_green  {
+   background-color: #8ba148
+}
