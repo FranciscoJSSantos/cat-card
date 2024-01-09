@@ -2,7 +2,6 @@
 
 <div class="grid grid-cols-2">
    <div class="flex center justify-center" *ngFor="let cat of catList">
-      <img alt={{cat.name}} (click)="redirectCat(cat?.id)" class="cursor-pointer img_home mx-4 my-4" src="{{cat.image}}"
-         alt="">
+      <img alt={{cat.name}} (click)="redirectCat(cat?.id)" class="cursor-pointer img_home " src="{{cat.image}}" alt="">
    </div>
 </div>

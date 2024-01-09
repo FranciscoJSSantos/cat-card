@@ -28,14 +28,9 @@
 .container_card {
   background-color: hsl(0, 0%, 100%);
   height: 100vh;
+  display: grid;
 }
 
-// .bg_image_wallpaper {s
-//    background-image: url('../../../assets/pictures/wallpaper/cat_hands2.png') !important;
-//    background-repeat: no-repeat !important;
-//    position: absolute !important;
-// }  
-//luffy   background-image: linear-gradient(to top, #f1ecec, #bfbbbb, #8f8c8d, #636061, #393738);
 
 .div_button_edit{
    display: grid;
@@ -44,3 +39,4 @@
    justify-content: left;
    margin-left: -1rem;
 }
+

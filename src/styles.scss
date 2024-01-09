@@ -17,15 +17,15 @@ body { font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 .blue {
-   color: #84c7e7;
+   color: #84c7e7 !important;
 }
 
 .yellow {
-   color: #e0901d; 
+   color: #e0901d !important; 
 }
 
 .green {
-   color: #8ba148;
+   color: #8ba148 !important;
 }
 
 .bg_blue {
@@ -37,4 +37,19 @@ body { font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .bg_green  {
    background-color: #8ba148
+}
+
+
+.blue_to_checkbox {
+   background-color: #84c7e7 !important;
+   border-color: #84c7e7 !important; 
+}
+
+.yellow_to_checkbox {
+   background-color: #e0901d;
+   border-color: #e0901d;
+}
+.green_to_checkbox  {
+   background-color: #8ba148;
+   border-color: #8ba148;
 }

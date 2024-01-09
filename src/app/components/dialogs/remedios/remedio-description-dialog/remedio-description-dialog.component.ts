@@ -13,7 +13,7 @@ import {
 } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterOutlet } from '@angular/router';
-import { Remedios } from '../../../interfaces/cat';
+import { Remedios } from '../../../../interfaces/cat';
 @Component({
   selector: 'app-remedio-description-dialog',
   standalone: true,

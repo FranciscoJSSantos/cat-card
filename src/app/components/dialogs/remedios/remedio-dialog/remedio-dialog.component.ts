@@ -13,8 +13,10 @@ import {
 } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterOutlet } from '@angular/router';
-import { Remedios } from '../../../interfaces/cat';
+import { Remedios } from '../../../../interfaces/cat';
+import { RemedioDeleteDialogComponent } from '../remedio-delete-dialog/remedio-delete-dialog.component';
 import { RemedioUnicoDialogComponent } from '../remedio-description-dialog/remedio-description-dialog.component';
+import { RemedioEditingDialogComponent } from '../remedio-editing-dialog/remedio-editing-dialog.component';
 @Component({
   selector: 'app-remedio-dialog',
   standalone: true,
@@ -46,9 +48,28 @@ export class RemedioDialogComponent implements OnInit {
 
   goToDescription(id: number) {
     let remedio = this.remediosList.filter((remedio) => remedio.id === id);
+    console.log(remedio);
     this.dialog.open(RemedioUnicoDialogComponent, {
       data: remedio,
-      width: '500px',
+      width: '450px',
+    });
+  }
+
+  editRemedio(id: number) {
+    let remedio = this.remediosList.filter((remedio) => remedio.id === id);
+    console.log(remedio);
+    this.dialog.open(RemedioEditingDialogComponent, {
+      data: remedio,
+      width: '450px',
+    });
+  }
+
+  removeRemedio(id: number) {
+    let remedio = this.remediosList.filter((remedio) => remedio.id === id);
+    console.log(remedio);
+    this.dialog.open(RemedioDeleteDialogComponent, {
+      data: remedio,
+      width: '450px',
     });
   }
 }
