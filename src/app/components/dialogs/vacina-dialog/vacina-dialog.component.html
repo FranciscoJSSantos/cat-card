@@ -1,5 +1,13 @@
 <div>
-   <h1 mat-dialog-title>Vacinas</h1>
+   <div class="w-full flex justify-center text-center">
+      <div class="flex justify-center text-center">
+         <h1 mat-dialog-title>Vacinas</h1>
+      </div>
+
+
+      <button class="block absolute p-4 top-0 right-0" mat-dialog-close><mat-icon>close</mat-icon></button>
+
+   </div>
    <div class="flex" mat-dialog-content>
       <ul role="list" class="divide-y divide-gray-400">
          <li *ngFor="let item of vacinaList; let i = index" class="flex justify-between gap-x-6 py-5">

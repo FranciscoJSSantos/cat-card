@@ -5,7 +5,7 @@
 
 
 
-body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: #eee8d0;}
 
 .male {
    color: #2563eb;   
@@ -52,4 +52,8 @@ body { font-family: Roboto, "Helvetica Neue", sans-serif; }
 .green_to_checkbox  {
    background-color: #8ba148;
    border-color: #8ba148;
+}
+
+.icon_description {
+   font-size: 1.3rem !important;
 }

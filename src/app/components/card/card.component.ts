@@ -12,7 +12,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatMenuModule } from '@angular/material/menu';
 import { Cat } from '../../interfaces/cat';
 import { EditCatComponent } from '../dialogs/edit-cat/edit-cat.component';
-import { ExameDialogComponent } from '../dialogs/exame-dialog/exame-dialog.component';
+import { ExameDialogComponent } from '../dialogs/exames/exame-dialog/exame-dialog.component';
 import { VacinaDialogComponent } from '../dialogs/vacina-dialog/vacina-dialog.component';
 import { HomeService } from '../home/home.service';
 

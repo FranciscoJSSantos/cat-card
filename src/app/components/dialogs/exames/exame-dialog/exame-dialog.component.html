@@ -1,29 +1,27 @@
 <div class="">
    <div class="w-full flex justify-center text-center">
       <div class="flex justify-center text-center">
-         <h1 mat-dialog-title>Remédios</h1>
+         <h1 mat-dialog-title>Exames</h1>
       </div>
 
 
       <button class="block absolute p-4 top-0 right-0" mat-dialog-close><mat-icon>close</mat-icon></button>
 
    </div>
-
    <div class="flex" mat-dialog-content>
       <ul role="list" class="divide-y divide-gray-400">
-         <li *ngFor="let item of remediosList; let i = index" class="flex justify-between gap-x-6 py-5">
+         <li *ngFor="let item of examesList; let i = index" class="flex justify-between gap-x-6 py-5">
             <div class="flex min-w-0 gap-x-4">
-
                <div class="min-w-0 flex-auto">
                   <p class="text-sm font-semibold leading-6 text-gray-900">{{item.name}}</p>
                </div>
             </div>
-            <div class="flex shrink-0 sm:flex  sm:items-end">
-               <span (click)="goToDescription(item.id)" class="leading-6 text-blue-500"><mat-icon
-                     class="icon_description" inline>info</mat-icon></span>
-               <span (click)="editRemedio(item.id)" class="ml-4 leading-6 text-yellow-500"><mat-icon
+            <div class="flex shrink-0 sm:flex sm:items-end">
+               <span (click)="seeDocument()" class="leading-6 text-blue-500"><mat-icon class="icon_description"
+                     inline>download</mat-icon></span>
+               <span (click)="editExame(item.id)" class="leading-6 text-yellow-500 ml-4"><mat-icon
                      class="icon_description" inline>edit</mat-icon></span>
-               <span (click)="removeRemedio(item.id)" class="ml-4 leading-6 text-red-500"><mat-icon
+               <span (click)="deleteExame(item.id)" class="leading-6 text-red-500 ml-4"><mat-icon
                      class="icon_description" inline>delete</mat-icon></span>
             </div>
          </li>

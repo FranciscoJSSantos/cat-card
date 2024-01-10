@@ -23,12 +23,20 @@
          </mat-menu>
       </div>
 
-      <div *ngFor="let cat of catList" class="bg-white p-3 shadow-sm rounded-sm">
+      <div *ngFor="let cat of catList" class=" p-3 shadow-sm rounded-sm">
          <div class="flex justify-center">
-            <img class="img_card mb-4 mx-6" src={{cat?.image}} alt="">
-            <div class="div_button_edit">
-               <mat-icon (click)="editCat()">edit</mat-icon>
+            <div class="grid text-center align-middle justify-center">
+               <div>
+                  <img class="img_card mb-4 mx-6" src={{cat?.image}} alt="">
+                  <div class="div_button_edit">
+                     <mat-icon (click)="editCat()">edit</mat-icon>
+                  </div>
+               </div>
+
+               <p class="card_cat-name">{{cat?.name}}</p>
             </div>
+
+
          </div>
          <div class="mt-8 text-gray-700 ">
             <div class="grid text-sm">

@@ -10,9 +10,9 @@ import {
   MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 import { RouterOutlet } from '@angular/router';
 import { Cat, Vacinas } from '../../../interfaces/cat';
-
 @Component({
   selector: 'app-vacina-dialog',
   standalone: true,
@@ -25,6 +25,7 @@ import { Cat, Vacinas } from '../../../interfaces/cat';
     MatDialogContent,
     MatDialogActions,
     MatDialogClose,
+    MatIconModule,
   ],
   templateUrl: './vacina-dialog.component.html',
   styleUrl: './vacina-dialog.component.scss',
